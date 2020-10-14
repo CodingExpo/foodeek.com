@@ -603,3 +603,15 @@ a.label:hover, a.label:focus {
 h1.page-header {
   margin-top: 20px;
   border-bottom: 0; }
+
+
+  .dashboard{
+    height: 500px;
+    width: 1200px;
+    border-color: #1b3548;
+    border-radius: 20px;
+   
+    padding: 30px;
+    margin-left: 250px;
+    background-color: #1b3548;
+  }
