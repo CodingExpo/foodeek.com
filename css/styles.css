@@ -606,15 +606,12 @@ h1.page-header {
 
 
 
-/* .Dashboard{
-  background-color: #1b3548;
+.Dashboard{
+  background-color: #EC7063;
   height: 700px;
   width: 1200px;
   margin-left: 280px;
 
-} */
-.dash{
-  margin-left: 280px;
-  background-color: #481b3e;
-
 }
+
+
