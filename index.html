@@ -31,7 +31,28 @@
             padding: 5px; 
             background: white;
         }
-        
+        input:focus{
+            outline: none;
+        }
+        input[type=text] {
+            color: black;
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border-radius: 17px;
+            border: none;
+        }
+        .search-container button {
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            border-radius: 17px;
+        }
+
     </style>
     <title>Foodeek</title>
 </head>
@@ -45,9 +66,6 @@
             <nav id="main_nav">
                 <a href="register.html">Register</a>
                 <a href="login.html">Login</a>
-                <!-- <a href="#portfolio">Portfolio</a>
-                <a href="#about">About</a> -->
-                <!-- <a href="#contact">Contact</a> -->
                 <a href="#cart"><i class="fa fa-shopping-bag"></i></a>
             </nav>
         </div>
@@ -56,135 +74,19 @@
     <section id="banner">
             <div class="o-wrapper">
                 <div id="banner_content">
-                    <h1><span>Fresh Fish Chicken & Mutton Daily</span></h1>
-                    <p style="font-weight: bolder;">Non-veg Lover</p>
-                    <button class="learn_more o-btn">Learn More</button>
+                    <h1><span style="-webkit-text-stroke: 1px black;">Fresh Fish Chicken & Mutton Daily</span></h1>
+                    <h2 style="-webkit-text-stroke: 0.5px black;" style="font-weight: bolder;">Non-veg Lover</h2>
+                    <!-- <button class="learn_more o-btn">Learn More</button> -->
+                    <div style="margin-top:30px; margin-bottom: 30px;" class="search-container">
+                        <form>
+                          <input type="text" placeholder="Search.." name="search">
+                          <button style="background: #EC7063;" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                      </div>
                     <button class="scroll_down"><img src="./images/arrow.png" alt="learn_more"></button>
                 </div>
             </div>
     </section>
-
-    <!-- <section id="portfolio">
-            <div class="o-wrapper u-clearfix">
-            <div class="o-title">
-                    <h2>Portfolio</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                </div>
-
-                <ul id="portfolio_nav" class="filter">
-                    <li class="active o-btn" data-design="all">All</li>
-                    <li class="o-btn" data-design="web">Web Design</li>
-                    <li class="o-btn" data-design=
-                    graphic>Graphic Design</li>
-                    <li class="o-btn" data-design="flat">Flat Design</li>
-                </ul>
-
-                <div id="icons">
-
-                    <div class="icon" data-design="web">
-                        <img src="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-1.png" alt="img-1">
-                        <a data-lightbox='web' data-title="img-1" href="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-1.png">
-                            <div class="inner_all">
-                                <div class="inner_content">
-                                    <img src="https://cdn.rawgit.com/Awfj/Project-1/78e2b1d8/images/search.png" alt="search">
-                                    <h3>Example Title</h3>
-                                    <p>Web Design</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="icon" data-design="graphic">
-                        <img src="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-2.png" alt="img-2">
-                        <a data-lightbox='graphic' data-title="img-2" href="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-2.png">
-                            <div class="inner_all">
-                                <div class="inner_content">
-                                    <img src="https://cdn.rawgit.com/Awfj/Project-1/78e2b1d8/images/search.png" alt="search">
-                                    <h3>Example Title</h3>
-                                    <p>Web Design</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="icon" data-design="flat">
-                        <img src="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-3.png" alt="img-3">
-                        <a data-lightbox='flat' data-title="img-3" href="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-3.png">
-                            <div class="inner_all">
-                                <div class="inner_content">
-                                    <img src="https://cdn.rawgit.com/Awfj/Project-1/78e2b1d8/images/search.png" alt="search">
-                                    <h3>Example Title</h3>
-                                    <p>Web Design</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="icon" data-design="graphic">
-                        <img src="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-4.png" alt="img-4">
-                        <a data-lightbox='graphic' data-title="img-4" href="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-4.png">
-                            <div class="inner_all">
-                                <div class="inner_content">
-                                    <img src="https://cdn.rawgit.com/Awfj/Project-1/78e2b1d8/images/search.png" alt="search">
-                                    <h3>Example Title</h3>
-                                    <p>Web Design</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="icon" data-design="web">
-                        <img src="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-5.png" alt="img-5">
-                        <a data-lightbox='web' data-title="img-5" href="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-5.png">
-                            <div class="inner_all">
-                                <div class="inner_content">
-                                    <img src="https://cdn.rawgit.com/Awfj/Project-1/78e2b1d8/images/search.png" alt="search">
-                                    <h3>Example Title</h3>
-                                    <p>Web Design</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="icon" data-design="web">
-                        <img src="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-6.png" alt="img-6">
-                        <a data-lightbox='web' data-title="img-6" href="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-6.png">
-                            <div class="inner_all">
-                                <div class="inner_content">
-                                    <img src="https://cdn.rawgit.com/Awfj/Project-1/78e2b1d8/images/search.png" alt="search">
-                                    <h3>Example Title</h3>
-                                    <p>Web Design</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="icon" data-design="flat">
-                        <img src="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-1.png" alt="img-7">
-                        <a data-lightbox='flat' data-title="img-7" href="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-1.png">
-                            <div class="inner_all">
-                                <div class="inner_content">
-                                    <img src="https://cdn.rawgit.com/Awfj/Project-1/78e2b1d8/images/search.png" alt="search">
-                                    <h3>Example Title</h3>
-                                    <p>Web Design</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="icon" data-design="graphic">
-                        <img src="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-2.png" alt="img-8">
-                        <a data-lightbox='graphic' data-title="img-8" href="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-2.png">
-                            <div class="inner_all">
-                                <div class="inner_content">
-                                    <img src="https://cdn.rawgit.com/Awfj/Project-1/78e2b1d8/images/search.png" alt="search">
-                                    <h3>Example Title</h3>
-                                    <p>Web Design</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-    </section> -->
 
     <section id="portfolio">
         <div class="o-wrapper u-clearfix">
@@ -228,7 +130,47 @@
             </div>
         </div>
     </section>
+    <br>
+    <hr>
 
+    <div class="container">
+		
+        <h1 style="text-align: center;">Chicken Category</h1>
+        <hr>
+		<div class="row">	
+    		<div class="col-lg-4 col-sm-6 col-xs-12">
+    			<div class="thumbnail">
+                    <img src="http://i.imgur.com/qK42fUu.jpg" >
+                    <div class="caption" style="text-align: center;">
+                        <h3>Mix Chicken</h3>
+                        <p>1Kg : 150Rs</p>
+                    </div>
+                    
+                </div>
+    		</div>
+    		<div class="col-lg-4 col-sm-6 col-xs-12">
+    			<div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" >
+                    <div class="caption" style="text-align: center;">
+                        <h3>Leg Piece</h3>
+                        <p>1Kg : 150Rs</p>
+                    </div>
+                </div>
+            </div>
+    		<div class=" col-lg-4 col-sm-6 col-xs-12">
+    			<div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+                    <div class="caption" style="text-align: center;">
+                        <h3>Bone less</h3>
+                        <p>1Kg : 150Rs</p>
+                    </div>
+                </div>
+    		</div>
+    	</div>	
+
+    </div>
+    <br>
+    <br>
     <section id="about">
             <div class="o-wrapper">
                 <div class="o-title">
