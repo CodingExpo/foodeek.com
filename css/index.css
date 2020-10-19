@@ -419,7 +419,3 @@ html {
     .c-footer__btn {
       float: none; } }
 
-html {
-    scroll-behavior: smooth;
-}
-
