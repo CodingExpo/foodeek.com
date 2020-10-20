@@ -45,7 +45,7 @@ html {
     padding-bottom: 2.5em; }
   
   .active {
-    background: #1bbc9b;
+    background:  #EC7063;
     color: #fff !important;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
@@ -55,14 +55,14 @@ html {
     display: none; }
   
   .o-btn {
-    background: #1bbc9b;
+    background:  #EC7063;
     color: #fff;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     border: none; }
     .o-btn:hover {
-      background-color: #16a086;
+      background-color: #EC7063;
       color: #fff !important;
       cursor: pointer; }
   
@@ -95,7 +95,7 @@ html {
         -o-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out; }
         #main_header #main_nav a:hover {
-          background: #1bbc9b;
+          background: #EC7063;
           color: #fff; }
   
   #banner {
@@ -147,7 +147,7 @@ html {
       margin: 0 .2em;
       list-style: none; }
     #portfolio #portfolio_nav .active {
-      background: #16a086; }
+      background: #EC7063; }
   
   #portfolio #icons {
     padding-top: 2em; }
@@ -195,7 +195,7 @@ html {
             font-size: 1em; }
   
   #about {
-    background: #1bbc9b; }
+    background: #EC7063; }
     #about .o-title {
       color: #fff; }
     #about .content .workers {
@@ -335,7 +335,7 @@ html {
   
   @media only screen and (max-width: 768px) {
     .active {
-      background: #1bbc9b;
+      background: #EC7063;
       color: #fff; }
     #main_nav {
       display: none; }
