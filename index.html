@@ -16,6 +16,19 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     
     <style>
+        #main_header #main_nav a:hover{
+            background: #EC7063;
+        }
+        #about{
+            background: #EC7063;
+        }
+        img{
+            transition: transform .2s;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        img:hover{
+            transform: scale(1.05);
+        }
         #main_header{
             padding: 0.6em 0;
         }
@@ -23,13 +36,21 @@
             background-image: url("https://www.melissahartfiel.com/wp-content/uploads/2013/04/20130426-1304_untitled0051.jpg");
             margin-top: -5em;
         }
+        #order:hover{
+            background: #EC7063;
+            color: white;
+        }
         #order{
+            
             text-decoration: none; 
-            border:2px solid blue; 
-            color:blue; 
+            border:2px solid  #EC7063;; 
+            color: #EC7063;; 
             border-radius: 20px; 
             padding: 5px; 
             background: white;
+            padding-left: 2em;
+            padding-right: 2em;
+            
         }
         input:focus{
             outline: none;
@@ -41,6 +62,7 @@
             font-size: 17px;
             border-radius: 17px;
             border: none;
+            width: 20em;
         }
         .search-container button {
             padding: 6px 10px;
@@ -52,7 +74,7 @@
             cursor: pointer;
             border-radius: 17px;
         }
-
+        
     </style>
     <title>Foodeek</title>
 </head>
@@ -60,7 +82,7 @@
     <header id="main_header">
         <div style="width: unset !important;" class="o-wrapper u-clearfix">
             <div class="logo">
-                <a href="#"><img style="width: 140px;height: 50px;" src="./images/logo.png" alt="Logo"></a>
+                <a href="#"><img style="width: 140px;height: 50px;box-shadow: unset !important; " src="./images/logo.png" alt="Logo"></a>
             </div>
             <button class="menu"><i class="fa fa-bars"></i></button>
             <nav id="main_nav">
@@ -74,9 +96,9 @@
     <section id="banner">
             <div class="o-wrapper">
                 <div id="banner_content">
-                    <h1><span style="-webkit-text-stroke: 1px black;">Fresh Fish Chicken & Mutton Daily</span></h1>
-                    <h2 style="-webkit-text-stroke: 0.5px black;" style="font-weight: bolder;">Non-veg Lover</h2>
-                    <!-- <button class="learn_more o-btn">Learn More</button> -->
+                    <h1><span style="-webkit-text-stroke: 1px black;text-shadow: 1px 1px 2px black, 0 0 25px #EC7063, 0 0 5px #EC7063;">Fresh Fish Chicken & Mutton Daily</span></h1>
+                    <h2 style="-webkit-text-stroke: 0.5px black;text-shadow: 1px 1px 2px black, 0 0 25px #EC7063, 0 0 5px #EC7063;" style="font-weight: bolder;">Non-veg Lover</h2>
+                    
                     <div style="margin-top:30px; margin-bottom: 30px;" class="search-container">
                         <form>
                           <input type="text" placeholder="Search.." name="search">
@@ -88,51 +110,52 @@
             </div>
     </section>
 
-    <section id="portfolio">
-        <div class="o-wrapper u-clearfix">
-        <div class="o-title">
-                <h2>Today Hot Dishes</h2>
-                <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p> -->
-            </div>
 
-            <!-- <ul id="portfolio_nav" class="filter">
-                <li class="active o-btn" data-design="all">All</li>
-                <li class="o-btn" data-design="web">Web Design</li>
-                <li class="o-btn" data-design=
-                graphic>Graphic Design</li>
-                <li class="o-btn" data-design="flat">Flat Design</li>
-            </ul> -->
-
-            <div id="icons">
-
-                <div class="icon">
-                    <img src="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-1.png" alt="img-1">
-                    <!-- <a data-lightbox='web' data-title="img-1" href="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-1.png"> -->
-                        
+    <div id="portfolio" class="container">
+        <h1 style="text-align: center;">Today Hot Dishes</h1>
+        <img style="box-shadow: unset; transform: unset !important; margin-left: 46%;margin-top: 20px;margin-bottom: 40px;" width="80" height="20" src="./images/vawes.png"  alt="">
+        
+		<div class="row">	
+    		<div class="col-lg-4 col-sm-6 col-xs-12">
+    			<div class="thumbnail" style="border: none !important;">
+                    <img style="border-radius: 50%; width: 20em; height: 18em;" src="https://foodeek.com/wp-content/uploads/2020/10/fishfood-2.jpg" >
+                    <div class="caption" style="text-align: center;">
+                        <br>
                         <a id="order" href="#">Order Now</a>
-                        
-                    </a>
-                </div>
-                <div class="icon">
-                    <img src="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-5.png" alt="img-5">
-                    <!-- <a data-lightbox='web' data-title="img-5" href="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-5.png"> -->
-                        
-                        <a id="order" href="#">Order Now</a>
-                    </a>
-                </div>
-                <div class="icon">
-                    <img src="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-6.png" alt="img-6">
-                    <!-- <a data-lightbox='web' data-title="img-6" href="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/icons/img-6.png"> -->
-                        
-                        <a id="order" href="#">Order Now</a>
-                    </a>
+                        <h3>Mix Chicken</h3>
+                        <p>1Kg : 150Rs</p>
+                    </div>
+                    
                 </div>
             </div>
-        </div>
-    </section>
-    <br>
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+    			<div class="thumbnail" style="border: none !important;">
+                    <img style="border-radius: 50%; width: 20em; height: 18em;" src="https://foodeek.com/wp-content/uploads/2020/10/fishfood-1.jpg" >
+                    <div class="caption" style="text-align: center;">
+                        <br>
+                        <a id="order" href="#">Order Now</a>
+                        <h3>Mix Chicken</h3>
+                        <p>1Kg : 150Rs</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+    			<div class="thumbnail" style="border: none !important;">
+                    <img style="border-radius: 50%; width: 20em; height: 18em;" src="https://foodeek.com/wp-content/uploads/2020/10/fishfood-3.jpg" >
+                    <div class="caption" style="text-align: center;">
+                        <br>
+                        <a id="order" href="#">Order Now</a>
+                        <h3>Mix Chicken</h3>
+                        <p>1Kg : 150Rs</p>
+                    </div>
+                    
+                </div>
+    		</div>
+    	</div>	
+
+    </div>
     <hr>
-
     <div class="container">
 		
         <h1 style="text-align: center;">Chicken Category</h1>
@@ -142,6 +165,8 @@
     			<div class="thumbnail">
                     <img src="http://i.imgur.com/qK42fUu.jpg" >
                     <div class="caption" style="text-align: center;">
+                        <br>
+                        <a id="order" href="#">Order Now</a>
                         <h3>Mix Chicken</h3>
                         <p>1Kg : 150Rs</p>
                     </div>
@@ -152,6 +177,8 @@
     			<div class="thumbnail">
                     <img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" >
                     <div class="caption" style="text-align: center;">
+                        <br>
+                        <a id="order" href="#">Order Now</a>
                         <h3>Leg Piece</h3>
                         <p>1Kg : 150Rs</p>
                     </div>
@@ -161,6 +188,8 @@
     			<div class="thumbnail">
                     <img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
                     <div class="caption" style="text-align: center;">
+                        <br>
+                        <a id="order" href="#">Order Now</a>
                         <h3>Bone less</h3>
                         <p>1Kg : 150Rs</p>
                     </div>
@@ -171,239 +200,170 @@
     </div>
     <br>
     <br>
+    <br>
     <section id="about">
             <div class="o-wrapper">
                 <div class="o-title">
                     <h2>Fish Category</h2>
-                    
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p> -->
                 </div>
                 <div class="content owl-carousel owl-theme">
         
                     <div class="workers">
                         <div class="img u-clearfix">
                             <img src="https://img.etimg.com/thumb/msid-68495044,width-1199,height-900,imgsize-1335371,overlay-etpanache/photo.jpg" alt="ava-1">
-                            <!-- <div class="inner_social">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div> -->
+                            
                         </div>
                         <div class="some_text">
                             <div class="stuff_titles">
+                                <br>
+                                <a id="order" href="#">Order Now</a>
                                 <h3>Fish Name</h3>
                                 <br>
                                 <h5>1 Kg - 150 Rs</h5>
                             </div>
-                            <!-- <p>1 Kg - 150 Rs</p> -->
+                            
                         </div>
                     </div>
 
                     <div class="workers">
                         <div class="img u-clearfix">
                             <img src="https://img.etimg.com/thumb/msid-68495044,width-1199,height-900,imgsize-1335371,overlay-etpanache/photo.jpg" alt="ava-1">
-                            <!-- <div class="inner_social">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div> -->
+                            
                         </div>
                         <div class="some_text">
                             <div class="stuff_titles">
+                                <br>
+                                <a id="order" href="#">Order Now</a>
                                 <h3>Fish Name</h3>
                                 <br>
                                 <h5>1 Kg - 150 Rs</h5>
                             </div>
-                            <!-- <p>1 Kg - 150 Rs</p> -->
+                            
                         </div>
                     </div>
 
                     <div class="workers">
                         <div class="img u-clearfix">
                             <img src="https://img.etimg.com/thumb/msid-68495044,width-1199,height-900,imgsize-1335371,overlay-etpanache/photo.jpg" alt="ava-1">
-                            <!-- <div class="inner_social">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div> -->
+                            
                         </div>
                         <div class="some_text">
                             <div class="stuff_titles">
+                                <br>
+                                <a id="order" href="#">Order Now</a>
                                 <h3>Fish Name</h3>
                                 <br>
                                 <h5>1 Kg - 150 Rs</h5>
                             </div>
-                            <!-- <p>1 Kg - 150 Rs</p> -->
+                            
                         </div>
                     </div>
 
                     <div class="workers">
                         <div class="img u-clearfix">
                             <img src="https://img.etimg.com/thumb/msid-68495044,width-1199,height-900,imgsize-1335371,overlay-etpanache/photo.jpg" alt="ava-1">
-                            <!-- <div class="inner_social">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div> -->
+                            
                         </div>
                         <div class="some_text">
                             <div class="stuff_titles">
+                                <br>
+                                <a id="order" href="#">Order Now</a>
                                 <h3>Fish Name</h3>
                                 <br>
                                 <h5>1 Kg - 150 Rs</h5>
                             </div>
-                            <!-- <p>1 Kg - 150 Rs</p> -->
+                            
                         </div>
                     </div>
 
                     <div class="workers">
                         <div class="img u-clearfix">
                             <img src="https://img.etimg.com/thumb/msid-68495044,width-1199,height-900,imgsize-1335371,overlay-etpanache/photo.jpg" alt="ava-1">
-                            <!-- <div class="inner_social">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div> -->
+                            
                         </div>
                         <div class="some_text">
                             <div class="stuff_titles">
+                                <br>
+                                <a id="order" href="#">Order Now</a>
                                 <h3>Fish Name</h3>
                                 <br>
                                 <h5>1 Kg - 150 Rs</h5>
                             </div>
-                            <!-- <p>1 Kg - 150 Rs</p> -->
+                            
                         </div>
                     </div>
 
                     <div class="workers">
                         <div class="img u-clearfix">
                             <img src="https://img.etimg.com/thumb/msid-68495044,width-1199,height-900,imgsize-1335371,overlay-etpanache/photo.jpg" alt="ava-1">
-                            <!-- <div class="inner_social">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div> -->
+                            
                         </div>
                         <div class="some_text">
                             <div class="stuff_titles">
+                                <br>
+                                <a id="order" href="#">Order Now</a>
                                 <h3>Fish Name</h3>
                                 <br>
                                 <h5>1 Kg - 150 Rs</h5>
                             </div>
-                            <!-- <p>1 Kg - 150 Rs</p> -->
+                            
                         </div>
                     </div>
 
                     <div class="workers">
                         <div class="img u-clearfix">
                             <img src="https://img.etimg.com/thumb/msid-68495044,width-1199,height-900,imgsize-1335371,overlay-etpanache/photo.jpg" alt="ava-1">
-                            <!-- <div class="inner_social">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div> -->
+                            
                         </div>
                         <div class="some_text">
                             <div class="stuff_titles">
+                                <br>
+                                <a id="order" href="#">Order Now</a>
                                 <h3>Fish Name</h3>
                                 <br>
                                 <h5>1 Kg - 150 Rs</h5>
                             </div>
-                            <!-- <p>1 Kg - 150 Rs</p> -->
+                            
                         </div>
                     </div>
 
                     <div class="workers">
                         <div class="img u-clearfix">
                             <img src="https://img.etimg.com/thumb/msid-68495044,width-1199,height-900,imgsize-1335371,overlay-etpanache/photo.jpg" alt="ava-1">
-                            <!-- <div class="inner_social">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div> -->
+                            
                         </div>
                         <div class="some_text">
                             <div class="stuff_titles">
+                                <br>
+                                <a id="order" href="#">Order Now</a>
                                 <h3>Fish Name</h3>
                                 <br>
                                 <h5>1 Kg - 150 Rs</h5>
                             </div>
-                            <!-- <p>1 Kg - 150 Rs</p> -->
+                            
                         </div>
                     </div>
 
                     <div class="workers">
                         <div class="img u-clearfix">
                             <img src="https://img.etimg.com/thumb/msid-68495044,width-1199,height-900,imgsize-1335371,overlay-etpanache/photo.jpg" alt="ava-1">
-                            <!-- <div class="inner_social">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div> -->
+                            
                         </div>
                         <div class="some_text">
                             <div class="stuff_titles">
+                                <br>
+                                <a id="order" href="#">Order Now</a>
                                 <h3>Fish Name</h3>
                                 <br>
                                 <h5>1 Kg - 150 Rs</h5>
                             </div>
-                            <!-- <p>1 Kg - 150 Rs</p> -->
                         </div>
                     </div>
-        
-                    <!-- <div class="workers">
-                        <div class="img u-clearfix">
-                            <img src="https://cdn.rawgit.com/Awfj/Project-1/29176564/images/avatars/ava-2.png" alt="ava-1">
-                            <div class="inner_social">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div>
-                        </div>
-                        <div class="some_text">
-                            <div class="stuff_titles">
-                                <h4>Melannie Doe</h4>
-                                <h5>Project Manager</h5>
-                            </div>
-                            <p>Ut wisi enim ad minim veniam,
-                                quis nostrud exerci tation
-                                ullamcorper suscipit lobortis nisl
-                                ut aliquip ex ea commodo
-                                consequat.</p>
-                        </div>
-                    </div> -->
                 </div>
             </div>
     </section>
 
-    <!-- <section id="contact">
-        <div class="o-wrapper u-clearfix">
-            <div class="o-title">
-                <h2>Contact Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-            </div>
-            <div class="c-contact__content">
-                <form>
-                    <input type="text" placeholder="Your name"><input type="email" placeholder="Your email">
-                    <textarea placeholder="Your message"></textarea>
-                    <input class="o-btn" type="submit" value="Submit">
-                </form>
-
-                <div class="info">
-                    <p>Information</p>
-                    <ul class="info">
-                        <li>Bak-One Company
-                            12345 Hollywood Bvld Street
-                            Los Angeles, California</li>
-                            <li>+444 (Phone) 123456</li>
-                            <li>+123 (FAX) 0011223</li>
-                            <li>info@bak-onecompany.com</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-    </section> -->
+    <br>
     <br>
     <br>
     <div class="container">
@@ -415,6 +375,8 @@
     			<div class="thumbnail">
                     <img src="http://i.imgur.com/qK42fUu.jpg" >
                     <div class="caption" style="text-align: center;">
+                        <br>
+                        <a id="order" href="#">Order Now</a>
                         <h3>Mix Mutton</h3>
                         <p>1Kg : 150Rs</p>
                     </div>
@@ -425,6 +387,8 @@
     			<div class="thumbnail">
                     <img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" >
                     <div class="caption" style="text-align: center;">
+                        <br>
+                        <a id="order" href="#">Order Now</a>
                         <h3>Mix Mutton</h3>
                         <p>1Kg : 150Rs</p>
                     </div>
@@ -434,6 +398,8 @@
     			<div class="thumbnail">
                     <img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
                     <div class="caption" style="text-align: center;">
+                        <br>
+                        <a id="order" href="#">Order Now</a>
                         <h3>Mix Mutton</h3>
                         <p>1Kg : 150Rs</p>
                     </div>
@@ -444,6 +410,8 @@
     			<div class="thumbnail">
                     <img src="https://images.unsplash.com/photo-1439524970634-649c37a69e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1450&h=825&fit=crop&s=bfda9916c885869b43b70738693428d9">
                     <div class="caption" style="text-align: center;">
+                        <br>
+                        <a id="order" href="#">Order Now</a>
                         <h3>Mix Mutton</h3>
                         <p>1Kg : 150Rs</p>
                     </div>
@@ -453,6 +421,8 @@
     			<div class="thumbnail">
                     <img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
                     <div class="caption" style="text-align: center;">
+                        <br>
+                        <a id="order" href="#">Order Now</a>
                         <h3>Mix Mutton</h3>
                         <p>1Kg : 150Rs</p>
                     </div>
@@ -462,6 +432,8 @@
     			<div class="thumbnail">
                     <img src="https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
                     <div class="caption" style="text-align: center;">
+                        <br>
+                        <a id="order" href="#">Order Now</a>
                         <h3>Mix Mutton</h3>
                         <p>1Kg : 150Rs</p>
                     </div>
