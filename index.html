@@ -14,8 +14,11 @@
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Krona+One&family=Lemonada&display=swap" rel="stylesheet">
     <style>
+        h1{
+            font-family: 'Krona One', sans-serif;
+        }
         #main_header #main_nav a:hover{
             background: #EC7063;
         }
@@ -62,19 +65,50 @@
             font-size: 17px;
             border-radius: 17px;
             border: none;
-            width: 20em;
+            width: 18em;
+            margin-right: -40px;
         }
         .search-container button {
             padding: 6px 10px;
             margin-top: 8px;
-            margin-right: 16px;
             background: #ddd;
             font-size: 17px;
             border: none;
             cursor: pointer;
             border-radius: 17px;
+            
         }
-        
+        .typewriter h1 {
+            
+            color: #fff;
+            font-family: monospace;
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange; /* The typwriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .05em; /* Adjust as needed */
+            animation: 
+                typing 3.5s steps(30, end),
+                blink-caret .5s step-end infinite;
+        }
+
+            /* The typing effect */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange }
+        }
+        @media screen and (max-width: 480px){
+            #banner #banner_content h1{
+                font-size: 2.1em;
+            }
+        }
+
     </style>
     <title>Foodeek</title>
 </head>
@@ -96,13 +130,18 @@
     <section id="banner">
             <div class="o-wrapper">
                 <div id="banner_content">
-                    <h1><span style="-webkit-text-stroke: 1px black;text-shadow: 1px 1px 2px black, 0 0 25px #EC7063, 0 0 5px #EC7063;">Fresh Fish Chicken & Mutton Daily</span></h1>
-                    <h2 style="-webkit-text-stroke: 0.5px black;text-shadow: 1px 1px 2px black, 0 0 25px #EC7063, 0 0 5px #EC7063;" style="font-weight: bolder;">Non-veg Lover</h2>
+                    <div class="typewriter">
+                        <h1><span style="-webkit-text-stroke: 1px black;">Fresh Fish Chicken</span></h1>
+                        <h1><span style="-webkit-text-stroke: 1px black;">& Mutton Daily</span></h1>
+                    </div>
+                    <h2 style="-webkit-text-stroke: 0.5px black;text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;">Non-veg Lover</h2>
                     
                     <div style="margin-top:30px; margin-bottom: 30px;" class="search-container">
                         <form>
-                          <input type="text" placeholder="Search.." name="search">
-                          <button style="background: #EC7063;" type="submit"><i class="fa fa-search"></i></button>
+                            <input type="text" style="width: 8em; " placeholder="Alpha" name="location">
+                            <button style="background: #EC7063;" type="submit"><i class="fas fa-map-marked-alt"></i></button>
+                            <input type="text" placeholder="Search.." name="search">
+                            <button style="background: #EC7063;" type="submit"><i class="fa fa-search"></i></button>
                         </form>
                       </div>
                     <button class="scroll_down"><img src="./images/arrow.png" alt="learn_more"></button>
@@ -204,8 +243,10 @@
     <section id="about">
             <div class="o-wrapper">
                 <div class="o-title">
-                    <h2>Fish Category</h2>
+                    <h1>Fish Category</h1>
                 </div>
+                <br>
+                <br>
                 <div class="content owl-carousel owl-theme">
         
                     <div class="workers">
