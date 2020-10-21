@@ -1,0 +1,76 @@
+.boxorder{
+    border: #080808 solid;
+    /* width: 500px;
+    padding: 30px;
+    margin: 30px;
+    margin-left: 100px; */
+}
+
+.boxorder1{
+    border: #080808 solid;
+    margin: 20px;
+    padding: 20px;
+    width: 100px;
+    
+    
+}
+
+.billcss{
+    font-style: bold;
+}
+
+
+.bill{
+    font-weight:bold ;
+    margin-top: 100px;
+}
+
+.underline{
+    border-bottom: #080808 solid;
+
+}
+
+
+.total{
+  margin-top: 150px;
+}
+/* <div class="col-sm boxorder1">
+
+
+<div class="row ">
+    <div class="col col2"><p>LEG PICES</p></div>
+    <div class="col col3"><p>150RS</p></div>
+  </div>
+  <div class="row ">
+    <div class="col col2"><p>MIX CHICKEN</p></div>
+    <div class="col col3"><p>150RS</p></div>
+  </div>
+
+  <div class="row ">
+    <div class="col col2"><p>Bill Details</p></div>
+    <div class="col col3"><p></p></div>
+  </div>
+
+  <div class="row ">
+    <div class="col col2"><p>Item Total</p></div>
+    <div class="col col3"><p>300RS</p></div>
+  </div>
+
+  <div class="row detailscss1">
+    <div class="col col2"><button>Chech out</button></div>
+    <div class="col col3"><p>300RS</p></div>
+  </div>
+
+
+
+</div> */
+
+
+/* <div class="col-sm boxorder">
+            
+<h6>Order</h6>
+<h6>Card</h6>
+<h6>Address</h6>
+<h6>Logout</h6>
+
+</div> */
