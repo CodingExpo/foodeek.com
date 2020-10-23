@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="./css/order.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:400,700|Oswald:400,500,700">
+    <style>
+        .item-container-div li{
+            border-bottom: unset !important;
+        }
+        .combo-item{
+            margin-bottom: 2em;
+        }
+    </style>
+    
+</head>
+<body>
+    <p class="order-successful-text"> ORDER </p>
+    <div class="main-div col-md-12 col-lg-12">
+    <div class="track-order-div col-md-8 col-lg-8 col-sm-12 col-xs-12">
+        <div style="margin-top: 30px;" class="item-container-div">
+            <ul>
+                <li>
+                <div class="item-list-div">
+                    <br>
+                    <p style="font-weight: bold; font-size: 1.4em;"> Items </p>
+                    <hr>
+                    <span class="combo-item" style="margin-top: 2em;"> Mix Chicken<span style="margin-left: 30%;">250g</span><span style="float: right; margin-right: 15px;">150Rs</span> </span>
+                    <span class="combo-item"> Leg Pieces <span style="margin-left: 30%;">250g</span><span style="float: right; margin-right: 15px;">150Rs</span></span>
+                    
+                </div>
+                </li>
+                <li>
+                <!-- <div class="item-list-div">
+                    <hr>
+                    <p> Total <span class="quantity"></span> </p>
+                </div> -->
+                </li>
+            </ul>
+        </div>
+        
+        <div class="order-status-div">
+        <p class="order-status-text"> TRACK YOUR ORDER </p>
+        <!-- <p class="order-id"> Order id: 12312</p> -->
+        <br>
+        <ul class="order-status-animation">
+            <li>
+            <div class="order-placed">
+            <img  src="./images/success.png"/> 
+            <p> Accepted </p>
+            </div>
+            </li>
+            <li> 
+            <div class="fresh-food-being-prepared">
+            <img src="./images/success.png"/> 
+            <p> Packed </p>
+            </div>
+            </li>
+            <li> 
+            <div>
+            <img src="./images/fail.png"/> 
+            <p> Onway </p>
+            </div>
+            </li>
+            <li> 
+            <div>
+            <img src="./images/fail.png"/> 
+            <p> Order Delivered </p>
+            </div>
+            </li>
+        </ul>
+        
+        </div>
+    
+        <div class="customer-details">
+            <p class="delivery-text"> Delivery details </p>
+            <p class="delivery-address"> 111, sdjsdb jsdb Delhi </p>
+            <p class="delivery-text"> Contact Number </p>
+            <p class="consumer-phonenumber"> +91 99XXXXXX00</p>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+        <!-- <p class="arriving-in-header"> ARRIVING IN </p>
+        <div class="arriving-in-details">
+        <ul>
+            <li>
+            <p class="delivery-time"> 59 mins</p> 
+            </li>
+            <li>
+            <p class="delivery-boy-num"> Call Delivery Executive </p>
+            </li>
+            <li>
+            <p class="live-tracking-btn"> Live Track your Order </p>
+            </li>
+        </ul>
+        </div> -->
+        <p class="order-information-header"> BILL DETAILS </p>
+        <!-- <div class="order-information-div">
+        <p class="orderId"> Order id: 12345 </p>
+        <p class="ordered-time"> Order placed:12.23, October 22, 2020 </p>
+        </div> -->
+        <div class="item-container-div" style="height: 20em !important;">
+            <ul>
+                <li>
+                    <div class="item-list-div">
+                        <span class="combo-item" style="margin-top: 2em;"> Items Total<span style="float: right; margin-right: 3em;">300rs</span></span>
+                        <span class="combo-item"> Coupon <span style="float: right; margin-right: 3em;">-70rs</span></span>
+                        <span class="combo-item"> Delivery Fee <span style="float: right; margin-right: 3em;">40rs</span></span>
+                    </div>
+                </li>
+                <li>
+                    <div style="bottom: 15px !important;position: absolute;width: 90%;" class="item-list-div">
+                        <hr>
+                        <p> <span  style="color:#4cb209; font-weight: bold; font-size: 1.4em;">Accepted</span> <span style="float: right; margin-right: 30px">270rs</span> </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
