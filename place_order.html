@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Side Navigation Bar</title>
+    <link rel="stylesheet" href="css/place_order.css">
+    <link rel="stylesheet" href="js/place_order.js">
+    
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+<div class="wrapper">
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse"><span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="#"><span>Foodeek </span></a>
+				<ul class="nav navbar-top-links navbar-right">
+
+							</li>
+						</ul>
+					</li>
+	</nav>
+
+	
+    <div class="sidebar">
+		<h2>Foodex</h2>
+		
+        <ul>
+			<li class="active"><a href="dashboard.html"><em class='fa fa-address-book' >&nbsp;</em> Order</a></li>
+			<li ><a href="menu_item.html"><em class="fa fa-user-tie">&nbsp;</em> Card</a></li>
+			<li ><a href="total_order.html"><em class="fa fa-users">&nbsp;</em> Address</a></li>
+			<li ><a href="user.html"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+			
+
+        </ul> 
+     
+	</div>
+	
+    <div class="main_content">
+        <div class="header"><h2>Profit</h2></div>  
+        <div class="info">
+	  
+		
+            <div class="row total">
+
+                
+           
+                <div class="col boxorder">
+                    
+        
+                                    
+                    <div class="row">
+                        <div class="col boxorder">
+                         
+                            
+
+
+
+                            <div class="row rawp">
+                                <div class="col">
+                                  <h6>LEG PIECE</h6>
+                                </div>
+                                <div class="col">
+                                  <input type="number" placeholder="250gm">
+                                </div>
+                                <div class="col">
+                                  <h6>150rs</h6>
+                                </div>
+                              </div>
+
+
+
+
+                              <div class="row rawp">
+                                <div class="col">
+                                  <h6>MIXED CHICKEN</h6>
+                                </div>
+                                <div class="col">
+                                  <input type="number" placeholder="350gm">
+                                </div>
+                                <div class="col">
+                                  <h6>450rs</h6>
+                                </div>
+                              </div>
+
+                              <div class="row rawp">
+                                <div class="col">
+                                    <label class="container">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>QUARTER
+                                      </label>
+                                </div>
+                                <div class="col">
+                                    <form>
+                                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                        <input type="number" id="number" value="0" />
+                                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                      </form>
+
+                                </div>
+                              </div>
+
+                              <div class="row rawp">
+                                <div class="col">
+                                    <label class="container">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>HALF
+                                      </label>
+                                </div>
+                                <div class="col">
+                                  
+                                   
+                                    <form>
+                                        <div class="value-button" id="decrease" onclick="decreaseValuep()" value="Decrease Value">-</div>
+                                        <input type="number" id="number1" value="0" />
+                                        <div class="value-button" id="increase" onclick="increaseValuep()" value="Increase Value">+</div>
+                                      </form>
+
+
+                                </div>
+                              </div>
+
+                              <div class="row rawp">
+                                <div class="col">
+                                    <label class="container">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>FULL
+                                      </label>
+                                </div>
+                                <div class="col">
+                                    <form>
+                                        <div class="value-button" id="decrease" onclick="decreaseValueq()" value="Decrease Value">-</div>
+                                        <input type="number" id="number2" value="0" />
+                                        <div class="value-button" id="increase" onclick="increaseValueq()" value="Increase Value">+</div>
+                                      </form>
+
+                                </div>
+                              </div>
+
+
+
+
+                              <input type="text" class="inputplace justify-content-center" placeholder="Apply Coupon"/>
+
+
+
+                              <div class="input-group rawp">
+                               
+                                <div class="input-group mb-3">
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                      <option selected>Choose...</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <div class="input-group-append">
+                                      <label class="input-group-text" for="inputGroupSelect02">Payment Method</label>
+                                    </div>
+                                  </div>
+                                  
+                              </div>
+
+
+
+                              <div class="row rawp">
+                                <div class="col">
+                                    <p>ITEM TOTAL</p>
+                                </div>
+                                <div class="col">
+                                    <p>300RS</p>
+                                </div>
+                              </div>
+
+
+                              
+                              <div class="row rawp">
+                                <div class="col">
+                                    <p>COUPON</p>
+                                </div>
+                                <div class="col">
+                                    <p>00RS</p>
+                                </div>
+                              </div>
+
+
+
+                              
+                              <div class="row underline">
+                                <div class="col">
+                                    <p>DELIVERY FEE</p>
+                                </div>
+                                <div class="col">
+                                    <p>40RS</p>
+                                </div>
+                              </div>
+
+
+                              <div class="row gap rawp"  style="margin: 10px;" >
+                                <div class="col "><button type="button" class="btn btn-success">Chech out</button> 
+                                  </div>
+                                <div class="col "><p>300RS</p></div>
+                            </div>
+
+
+
+
+                              
+
+                        </div>
+                        <div class="col placecol1">
+                          
+                            
+
+
+
+                            <div class="row ">
+                                <h2 class="adddel">Add a adelivery address</h2>
+                                <div class="boxorder1">
+                                   <h5 style="margin: 10px; height: 40px;">Phone No.</h5>
+                                   <p style="margin: 10px; margin-top: 10px; height: 40px;">C-68, C-BLOCK,ALPHA-1,ALPHA-1,GREATER NOIDA</p>
+                                    
+                                  </div>
+
+                              </div>
+                              <button type="button" class="btn btn-success btncheck">Add new</button> 
+
+
+
+
+
+                        </div>
+                      </div>
+        
+                </div>
+               
+             
+              </div>
+                        
+		
+             
+        </div>
+        
+    </div>
+    <div class="col-1"></div>
+</div>
+
+
+
+
+
+<script>
+  function increaseValue() {
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
+  }
+  
+  function decreaseValue() {
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value < 1 ? value = 1 : '';
+    value--;
+    document.getElementById('number').value = value;
+  }
+
+
+</script>
+
+
+<script>
+    function increaseValuep() {
+      var value = parseInt(document.getElementById('number1').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      document.getElementById('number1').value = value;
+    }
+    
+    function decreaseValuep() {
+      var value = parseInt(document.getElementById('number1').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value < 1 ? value = 1 : '';
+      value--;
+      document.getElementById('number1').value = value;
+    }
+  
+  
+  </script>
+  
+  <script>
+    function increaseValueq() {
+      var value = parseInt(document.getElementById('number2').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      document.getElementById('number2').value = value;
+    }
+    
+    function decreaseValueq() {
+      var value = parseInt(document.getElementById('number2').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value < 1 ? value = 1 : '';
+      value--;
+      document.getElementById('number2').value = value;
+    }
+  
+  
+  </script>
+  
+
+
+</body>
+</html>
+
+

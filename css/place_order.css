@@ -1,0 +1,302 @@
+.boxorder{
+    border: #080808 solid;
+    margin-left: 200px;
+    margin: 20px;
+    padding: 20px;
+    width: 100px;
+  
+}
+
+
+
+
+.gap{
+    margin: 10px;
+}
+
+.boxorder1{
+
+  width: 430px;
+  border: #080808 solid;
+  margin: 20px;
+}
+
+
+.underline{
+    border-bottom: #080808 solid;
+
+}
+
+
+.total{
+background-color: #b1aaa9;
+} 
+
+.adddel{
+  margin-top: 150px;
+  margin-left: 40px;
+  padding: 20px;
+}
+
+
+.btncheck{
+  margin-left: 160px;
+}
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.rawp{
+  height: 40px;
+}
+
+.wrapper .sidebar{
+  width: 300px;
+  height: 100%;
+  background: #EC7063;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: #0b0529;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+ 
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #e45848;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background: #af3426;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #EC7063;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #080808;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+
+
+
+
+.cont1{
+    padding:10px;
+  
+    
+}
+
+.cont2{
+    padding:10px;
+  
+    
+}
+
+.cont3{
+    padding:10px;
+  
+    
+}
+
+.navbar{
+    background-color:#b1aaa9;
+    height: 40px;
+}
+
+
+.navbar h3{
+    color: #fff;
+   cursor: pointer;
+    height: 40px;
+    margin-left: 50px;
+}
+
+
+.fa{
+    color: #ffffff;
+}
+
+
+.sidebar ul li a{
+
+    color: #0b0529;
+
+}
+
+.row
+
+
+.inputplace{
+  width: 430px;
+  height: 40px;
+  margin: 15px 0;
+}
+
+
+
+form {
+  
+    margin: 0 auto;
+   
+  }
+  
+  .value-button {
+    display: inline-block;
+    border: 8px solid #ddd;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+  
+   
+    background: #eee;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+  form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  /* form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  } */
+  
+  input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+
+  input#number1 {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  input[type=number1]::-webkit-inner-spin-button,
+  input[type=number1]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  input#number2 {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  input[type=number2]::-webkit-inner-spin-button,
+  input[type=number2]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
