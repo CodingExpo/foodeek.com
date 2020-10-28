@@ -1,0 +1,143 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout Page</title>
+  <meta name="viewport" content="initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    label{
+      font-size: 1.2em !important;  
+    }
+    
+    input{
+      font-size:1.2em !important;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+        <h3>Checkout</h3>
+        
+        <br>
+        <div>
+            <div>Leg Pieces<span style="margin-left: 15%;">250g</span><span style="float: right;">150rs</span></div>
+            <br>
+            <div>Mix chicken<span style="margin-left: 15%;">250g</span><span style="float: right;">150rs</span></div>
+            <br>
+        </div>
+        <div class="form-check">
+          <div>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Quarter
+            </label>
+          </div>
+          <div>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+            <label class="form-check-label" for="defaultCheck2">
+              Half
+            </label>
+          </div>
+          <div>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+            <label class="form-check-label" for="defaultCheck3">
+              Full
+            </label>
+          </div>
+        </div>
+        <br>
+        <div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group"> <label>Have coupon?</label>
+                        <div class="input-group"> <input style="font-size: 1rem !important; margin-right: 10px;" type="text" class="form-control coupon" name="" placeholder="Coupon code"> <span class="input-group-append"> <button class="btn btn-primary btn-apply coupon" style="border-radius: 2px;">Apply</button> </span> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <select class="browser-default custom-select">
+            <option selected>Payment Mehod</option>
+            <option value="1">Net banking</option>
+            <option value="2">Debit card</option>
+            <option value="3">Cash</option>
+        </select>
+        <br>
+        <div>
+            <h3>Bill details</h3>
+            <hr>
+            <div>Item Total<span style="float: right;">300rs</span></div>
+            <br>
+            <div>Coupon<span style="float: right;">300rs</span></div>
+            <br>
+            <div>Delivery Fee<span style="float: right;">300rs</span></div>
+            
+            <hr>
+            <div><button type="button" class="btn btn-success">Place Order</button><span style="float: right;">300rs</span></div>
+            <hr>
+        </div>
+      </div>
+      
+      <div style="padding-left: 40px;" class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+        <form>
+          <h3>Add a delivery address</h3>
+          
+          <br>
+          <div class="input-field">
+            <input id="door" type="text" required class="validate" pattern="^\S.+" title="Please enter a valid flat no.">
+            <label for="door">Door/Flat No.</label>
+          </div>
+          <div class="input-field">
+            <input id="landmark" type="text" required class="validate" title="Please enter a valid Landmark" pattern="^\S.+">
+            <label for="landmark">Landmark</label>
+          </div>
+          <div class="input-field">
+            <input id="block" type="text" required class="validate" pattern="^\S.+" title="Please enter a valid address">
+            <label for="block">Block</label>
+          </div>
+          <div class="input-field">
+            <input id="area" type="text" required class="validate" title="Please enter a valid Area" pattern="^\S.+">
+            <label for="area">Area</label>
+          </div>
+          <div class="input-field">
+            <input id="town" type="text" required class="validate" title="Please enter a valid City/Town" pattern="^\S.+">
+            <label for="town">City</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input id="email" type="email" required class="validate" title="Please enter a valid email">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">contact_phone</i>
+            <input id="phone-number" type="tel" required title="Please enter a valid phone number (e.g., (123) 456-7890)" pattern="^[0-9]?\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" class="validate">
+            <label for="phone-number">Phone Number</label>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>
